@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("net.tbp.interval", appContext.getPackageName());
+        assertEquals("com.example.interval", appContext.getPackageName());
     }
 }
