@@ -18,7 +18,7 @@
         <item name="android:windowBackground">@drawable/splash_image</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:gravity">fill</item>
-        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:gravity">fill_vertical</item>
+        <item name="android:statusBarColor">@color/transpalentColor</item>
     </style>
 </resources>
