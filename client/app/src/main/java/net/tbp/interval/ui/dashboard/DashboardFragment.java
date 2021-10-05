@@ -66,7 +66,6 @@ public class DashboardFragment extends Fragment {
 
 //                RequestQueue queue = Volley.newRequestQueue(getActivity());
 //                String url ="http://192.168.0.42:8080/test/add";
-//                //String url = "https://www.google.com/;
 //                StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
 //                    @Override
 //                    public void onResponse(String response) {

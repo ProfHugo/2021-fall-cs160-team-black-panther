@@ -56,7 +56,8 @@
                     final TextView stringTextView = (TextView) root.findViewById(R.id.addStringFromURL);
                     // Instantiate the RequestQueue.
                     RequestQueue queue = Volley.newRequestQueue(getActivity());
-                    String url ="http://192.168.0.42:8080/test/all";
+                    //String url ="http://192.168.0.42:8080/test/all";
+                    String url ="https://www.google.com";
 
                     // Request a string response from the provided URL.
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
