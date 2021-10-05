@@ -64,30 +64,31 @@ public class DashboardFragment extends Fragment {
                 EditText taskNameET = (EditText) root.findViewById(R.id.taskName);
                 String taskName = taskNameET.getText().toString();
 
-                RequestQueue queue = Volley.newRequestQueue(getActivity());
-                String url ="http://192.168.0.42:8080/test/add";
-                StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        System.out.println(response);
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError e) {
-                        e.printStackTrace();
-                    }
-                }) {
-                    @Override
-                    protected Map<String, String> getParams() {
-                        Map<String, String> params = new HashMap<String, String>();
-                        params.put("name", taskName);
-                        return params;
-                    }
-                };
-
-                System.out.println(request.toString());
-                queue.add(request);
-                taskNameET.getText().clear();
+//                RequestQueue queue = Volley.newRequestQueue(getActivity());
+//                String url ="http://192.168.0.42:8080/test/add";
+//                //String url = "https://www.google.com/;
+//                StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        System.out.println(response);
+//                    }
+//                }, new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError e) {
+//                        e.printStackTrace();
+//                    }
+//                }) {
+//                    @Override
+//                    protected Map<String, String> getParams() {
+//                        Map<String, String> params = new HashMap<String, String>();
+//                        params.put("name", taskName);
+//                        return params;
+//                    }
+//                };
+//
+//                System.out.println(request.toString());
+//                queue.add(request);
+//                taskNameET.getText().clear();
             }
         }) ;
 

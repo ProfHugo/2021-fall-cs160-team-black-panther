@@ -22,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Make sure this is before calling super.onCreate
         super.onCreate(savedInstanceState);
+        // set the theme for the mainsreen
+        setTheme(R.style.Theme_Interval);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
