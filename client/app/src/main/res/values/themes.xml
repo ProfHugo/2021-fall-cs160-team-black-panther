@@ -18,11 +18,19 @@
         <!-- Customize your theme here. -->
     </style>
     <!--the style for splash screen-->
-    <style name="splashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="splashScreenTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="android:windowBackground">@drawable/splash_image</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:gravity">fill_vertical</item>
         <item name="android:statusBarColor">@color/transpalentColor</item>
+    </style>
+
+    <style name="nothing" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:gravity">fill_vertical</item>
+        <item name="android:statusBarColor">@color/transpalentColor</item>
+        <!-- Customize your theme here. -->
     </style>
 </resources>
